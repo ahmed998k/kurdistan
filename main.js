@@ -46,5 +46,5 @@ audio.addEventListener("timeupdate", () => {
   }
 });
 
-
+alert("ماڵپەر هێشتا لە ژێر کارکردن دایە و تەواو نەبووە ")
 console.log('This site was build by a9med412')
