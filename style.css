@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* FLAG */
+.flag {
+  width: 90vw;
+  max-width: 500px;
+  aspect-ratio: 3 / 2;
+  position: relative;
+  border: 3px solid #333;
+  overflow: hidden;
+}
+
+.qazi-number{
+    font-size: 30px;
+    color: snow;
+    display: flex;
+    font-family: monospace;
+    justify-content: center;
+    text-shadow: 1px 2px black;
+}
+
+
+.rojava{
+    font-size: 20px;
+     color: snow;
+    display: flex;
+    font-family: monospace;
+    justify-content: center;
+    text-shadow: 1px 2px black;
+    top: 60px;
+    position: relative;
+}
+.stripe {
+  height: 33.33%;
+}
+
+.red { background: #d80000; }
+.white { background: #fff; }
+.green { background: #009a44; }
+
+
+.sun {
+  position: absolute;
+  width: 30%;
+  aspect-ratio: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 12s linear infinite;
+}
+
+.ray {
+  position: absolute;
+  width: 6%;
+  height: 50%;
+  background: #ffcc00;
+  top: 0;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: rotate(calc(var(--i) * 17.14deg));
+}
+
+.sun-core {
+  position: absolute;
+  width: 45%;
+  height: 45%;
+  background: #ffcc00;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  from { transform: translate(-50%, -50%) rotate(0); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* BUTTON */
+.music-btn {
+  padding: 12px 26px;
+  border-radius: 999px;
+  border: none;
+  background: #ffcc00;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+}
+
+/* LYRICS */
+.lyrics-container {
+  width: 90vw;
+  max-width: 420px;
+  height: 30vh;
+  min-height: 160px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 12px;
+}
+
+.lyrics {
+  text-align: center;
+  transition: transform 0.4s ease;
+}
+
+.lyrics p {
+  margin: 14px 0;
+  opacity: 0.4;
+  font-size: clamp(14px, 4vw, 18px);
+}
+
+.lyrics p.active {
+  opacity: 1;
+  color: #d80000;
+  font-weight: bold;
+  font-size: clamp(16px, 5vw, 22px);
+}
