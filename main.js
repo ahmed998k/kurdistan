@@ -14,5 +14,15 @@ function toggleMusic() {
   }
 }
 
-alert("ماڵپەر هێشتا لە ژێر کارکردن دایە و تەواو نەبووە ")
+
+
+let raqam = prompt("2+2= ?")
+if(raqam == 1 ){
+  alert('BZHI KURDISTAN')
+}
+else{location.reload();
+}
+
+
+
 console.log('This site was build by @a9meddx')

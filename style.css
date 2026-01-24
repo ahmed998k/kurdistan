@@ -1,11 +1,9 @@
 * {
   box-sizing: border-box;
+  
 }
-
-body {
+body{
   margin: 0;
-  background: #f2f2f2;
-  font-family: Arial, sans-serif;
 }
 
 .app {
@@ -33,7 +31,6 @@ body {
 }
 
 
-
 .rojava{
     font-size: 15px;
      color: snow;
@@ -48,6 +45,7 @@ body {
     animation: revealText 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     animation-delay: 0.5s; 
 }
+
 .stripe {
   height: 33.33%;
 }
@@ -66,6 +64,7 @@ body {
   transform: translate(-50%, -50%);
   animation: spin 12s linear infinite;
 }
+
 .ray {
   position: absolute;
   width: 10%;
@@ -102,22 +101,23 @@ body {
 
 /* BUTTON */
 .music-btn {
-  padding: 12px 26px;
+  padding: 10px 20px;
   border-radius: 999px;
   border: none;
  color: #000000;
   background: #ffcc00;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
  font-family: monospace;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 10px;
-   opacity: 0;
+  opacity: 0;
     filter: blur(10px); 
     animation: revealText 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     animation-delay: 1s; 
+
 }
 
 .icon {
@@ -130,73 +130,112 @@ body {
 }
 
 .grey{
- background: linear-gradient(180deg, #000000 0%, #05053c 100%);
+ background: linear-gradient(180deg, #000000 0%, #170303 100%);
 }
 
 
 .whitee{
-
+ 
  align-items: center;
  min-height: 100vh;
  background-size: cover;
  background-position: center;
-background: linear-gradient(180deg, #05053c 0%, #000000 100%);
+background: linear-gradient(180deg, #170303 0%, #170303 100%);
+}
+
+.blue-section{
+  background: #05053c;
+}
+
+
+ img{
+  height: 70vh;
+ display: flex;
+ justify-content: center;
+ justify-self: center;
+ position: relative;
+
+  position: relative;
+  top: -200px
+   
+}
+
+
+img {
+  transform-origin: top center;
+  animation: swing 5s ease-in-out infinite;
+}
+
+@keyframes swing {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(3deg); }
+  50%  { transform: rotate(0deg); }
+  75%  { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.qazinumber{
+  position: relative;
+  top: 120px;
+  color: white;
+  font-family: monospace;
+  font-size: 30px;
+   opacity: 0;
+    filter: blur(10px); 
+    animation: revealText 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation-delay: 2s; 
+}
+
+.qaziinumber{
+    position: relative;
+  top: 170px;
+  color: white;
+  font-family: monospace;
+  font-size: 30px;
+   opacity: 0;
+    filter: blur(10px); 
+    animation: revealText 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation-delay: 1s; 
+    z-index: 1;
+}
+  
+
+.kaze-text{
+  color: #ffffff;
+    font-family: "Beiruti", sans-serif;
+    font-size: 30px;
+    text-align: center;
+      opacity: 0;
+    filter: blur(10px); 
+    animation: revealText 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation-delay: 3s;
+    position: relative;
+    top: -170px;
 }
 
 .quotes1{
   position: relative;
   font-size: 45px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   height: 440px;
   width: 400px;
   text-align: center;
   display: flex;
-  background: snow;
-  border: 2px solid snow;
-  justify-content: center;
+   justify-content: center;
   align-items: center;
-  font-family: "Aref Ruqaa", serif;
+   font-family: "Beiruti", sans-serif;
   border-radius: 20px;
   margin: auto;
   backdrop-filter: blur(20px);
-  box-shadow: 0px 2px 9px red;
-  text-shadow: 1px 2px red;
    opacity: 0;
     filter: blur(10px); 
     animation: revealText 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-    animation-delay: 1s; /* Waits for the spinner to be seen first */
+    animation-delay: 1s; 
+    top: -50px;
 }
 
 
 
-.loader-wrapper {
-    text-align: center;
-}
-
-
-.spinner {
-    width: 40px;
-    height: 40px;
-    border: 3px solid rgba(255, 255, 255, 0.1);
-    border-top: 3px solid #d70000;
-    border-radius: 50%;
-    margin: 0 auto 30px;
-    animation: spin 0.8s linear infinite;
-}
-
-
-
-.coming-soon {
-    color: #ffffff;
-    font-size: 48px;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    opacity: 0;
-    filter: blur(10px); 
-    animation: revealText 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-    animation-delay: 3s; /* Waits for the spinner to be seen first */
-    
-}
 
 @keyframes revealText {
     0% {
@@ -213,11 +252,32 @@ background: linear-gradient(180deg, #05053c 0%, #000000 100%);
 
 
 
+.sor{
+  color: #d70000;
+  background: #d70000;
+  height: 1000px;
+  width: 20px;
+}
+.zard{
+  color: #ffcc00;
+  background: #ffcc00;
+}
+.kask{
+  color: #009a44;
+  background: #009a44;
+}
 footer{
   text-align: center;
   font-family: monospace;
-   opacity: 0;
-    filter: blur(10px); 
-    animation: revealText 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-    animation-delay: 5s; /* Waits for the spinner to be seen first */
+  margin: 0;
+ background: linear-gradient(180deg, #170303 0%, #000000 100%);
+}
+
+
+a {
+  
+  color: #ffffff;
+  position: relative;
+  top: -20px;
+
 }
