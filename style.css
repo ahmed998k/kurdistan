@@ -297,6 +297,24 @@ i{
   }
 
   .quotes1{
+    font-size: 25px;
+     height: 400px;
+     width: 350px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 430px) {
+  img {
+   height: 500px;
+    position: relative;
+    left: 30px;
+    
+  }
+
+  .quotes1{
     font-size: 30px;
      height: 400px;
      width: 350px;
