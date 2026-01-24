@@ -15,10 +15,10 @@ function toggleMusic() {
 }
 
 
-
-let raqam = prompt("2+2= ?")
+alert(" 2+2=1")
+let raqam = prompt("2+2= ?  ")
 if(raqam == 1 ){
-  alert('BZHI KURDISTAN')
+  console.log("bji kurdistan")
 }
 else{location.reload();
 }
